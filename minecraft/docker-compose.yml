@@ -1,0 +1,10 @@
+volumes:
+  world:
+
+services:
+  minecraft:
+    image: minecraft:latest
+    volumes:
+    - world:/app/world
+    ports:
+    - ${PORT}25565
